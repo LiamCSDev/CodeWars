@@ -6,7 +6,6 @@ def generate_hashtag(s):
     if (len(s) > 140 or len(s) == 0): 
         return False
     else:
-        capitalize = s.title()
         return '#' + s.title().replace(" ", "")
 
 print(generate_hashtag('')==False)

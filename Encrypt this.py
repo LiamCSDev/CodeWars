@@ -6,7 +6,6 @@ def encrypt_this(text):
             encryptedWord.append(str(ord(word[0])) + lastWords[-1:] + lastWords[1:-1] + lastWords[:1])
         else: 
             encryptedWord.append(str(ord(word[0])) + lastWords)
-    print(" ".join(encryptedWord))
     return " ".join(encryptedWord)
 
 print(encrypt_this("") == "")
